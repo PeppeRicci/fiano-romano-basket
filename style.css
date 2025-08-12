@@ -1,0 +1,255 @@
+/* ===== RESET E BASE ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #f8f9fa;
+  color: #222;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* ===== COLORI SOCIALI ===== */
+:root {
+  --giallo: #FFD700;
+  --blu: #0033A0;
+  --scuro: #001b4d;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  background: var(--blu);
+  color: #fff;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  height: 50px;
+}
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+.main-nav ul {
+  display: flex;
+  gap: 1rem;
+}
+.main-nav a {
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+}
+.main-nav a.btn {
+  background: var(--giallo);
+  color: var(--blu);
+  border-radius: 4px;
+}
+.main-nav a:hover {
+  background: var(--giallo);
+  color: var(--blu);
+  transition: 0.3s;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/hero-bg.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 3rem 0;
+}
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+.hero-text {
+  flex: 1 1 300px;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: var(--giallo);
+}
+.hero-text .lead {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+}
+.hero-image {
+  flex: 1 1 300px;
+}
+.hero img {
+  border-radius: 8px;
+}
+
+/* ===== BOTTONI ===== */
+.btn {
+  background: var(--giallo);
+  color: var(--blu);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+}
+.btn:hover {
+  background: var(--blu);
+  color: var(--giallo);
+}
+.btn.ghost {
+  background: transparent;
+  border: 2px solid var(--giallo);
+  color: var(--giallo);
+}
+.btn.ghost:hover {
+  background: var(--giallo);
+  color: var(--blu);
+}
+.btn.small {
+  font-size: 0.9rem;
+}
+.btn.big {
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+}
+
+/* ===== SEZIONI ===== */
+.section {
+  padding: 3rem 0;
+}
+.section--strip {
+  background: var(--giallo);
+  color: var(--blu);
+}
+.section--light {
+  background: #f1f1f1;
+}
+.center {
+  text-align: center;
+}
+
+/* ===== CARDS ===== */
+.matches-preview .match {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+.matches-preview .teams {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.matches-preview .meta {
+  font-size: 0.9rem;
+  color: #555;
+}
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 1rem;
+}
+.team-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+.team-card h3 {
+  color: var(--blu);
+  margin-top: 0.5rem;
+}
+
+/* ===== NEWS ===== */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 1rem;
+}
+.news-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.news-card h3 {
+  color: var(--blu);
+  margin: 0.5rem 0;
+}
+
+/* ===== CTA ===== */
+.cta {
+  background: var(--blu);
+  color: #fff;
+  text-align: center;
+}
+.cta-inner {
+  padding: 2rem;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background: var(--scuro);
+  color: #fff;
+  padding: 1rem 0;
+}
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.logo-small {
+  height: 40px;
+}
+.socials a {
+  margin-right: 0.5rem;
+  background: var(--giallo);
+  color: var(--blu);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.85rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background: var(--blu);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+  .main-nav ul.open {
+    display: flex;
+  }
+  .nav-toggle {
+    display: block;
+  }
+}

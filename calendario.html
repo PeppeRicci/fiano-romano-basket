@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calendario Partite - Fiano Romano Basket</title>
+  <meta name="description" content="Consulta il calendario delle partite del Fiano Romano Basket." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/favicon.png" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="img/logo.png" alt="FIANO ROMANO BASKET" class="logo" />
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-label="Apri menu">☰</button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chi-siamo.html">Chi siamo</a></li>
+          <li><a href="squadre.html">Squadre</a></li>
+          <li><a href="calendario.html" class="active">Calendario</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contatti.html" class="btn small">Contatti</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SEZIONE: CALENDARIO -->
+  <section class="section">
+    <div class="container">
+      <h1>Calendario Partite</h1>
+      <p>Consulta le prossime partite del Fiano Romano Basket.</p>
+      <div class="matches-preview">
+        <div class="match">
+          <div class="teams"><strong>Fiano Romano Basket</strong> vs. Virtus Roma</div>
+          <div class="meta">Sabato 24 Agosto 2025, ore 18:00 - PalaFiano</div>
+        </div>
+        <div class="match">
+          <div class="teams"><strong>Fiano Romano Basket U18</strong> vs. Basket Lazio</div>
+          <div class="meta">Domenica 1 Settembre 2025, ore 16:00 - PalaFiano</div>
+        </div>
+        <div class="match">
+          <div class="teams"><strong>Fiano Romano Basket U14</strong> vs. Olimpia Roma</div>
+          <div class="meta">Sabato 7 Settembre 2025, ore 15:30 - PalaOlimpia</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="img/logo-footer.png" alt="FIANO ROMANO BASKET" class="logo-small" />
+        <p>© <span id="year"></span> Fiano Romano Basket — Tutti i diritti riservati</p>
+      </div>
+      <div class="footer-right">
+        <p>Segui la squadra:</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
