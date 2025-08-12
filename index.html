@@ -1,152 +1,82 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Fiano Romano Basket — Home</title>
-  <meta name="description" content="Fiano Romano Basket - Passione, formazione e competizione. Scopri squadre, calendario e notizie." />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="img/favicon.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FIANO ROMANO BASKET - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/menu.js"></script>
+  <script defer src="js/slider.js"></script>
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="img/logo.png" alt="FIANO ROMANO BASKET" class="logo" />
-      </a>
-
-      <button id="navToggle" class="nav-toggle" aria-label="Apri menu">
-        ☰
-      </button>
-
-      <nav class="main-nav" id="mainNav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="chi-siamo.html">Chi siamo</a></li>
-          <li><a href="squadre.html">Squadre</a></li>
-          <li><a href="calendario.html">Calendario</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="contatti.html" class="btn small">Contatti</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <nav class="navbar">
+      <div class="logo">FIANO ROMANO BASKET</div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="chi-siamo.html">CHI SIAMO</a></li>
+        <li><a href="squadre.html">SQUADRE</a></li>
+        <li><a href="calendario.html">CALENDARIO</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="contatti.html">CONTATTI</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <h1>FIANO ROMANO BASKET</h1>
-        <p class="lead">Passione, impegno e crescita per ogni giocatore. Unisciti a noi per la nuova stagione!</p>
-        <div class="hero-ctas">
-          <a class="btn" href="squadre.html">Scopri le squadre</a>
-          <a class="btn ghost" href="calendario.html">Prossime partite</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="img/hero-basket.jpg" alt="Partita di basket" />
-      </div>
+  <section class="hero-slider">
+    <div class="slides">
+      <div class="slide active" style="background-image: url('img/slide1.jpg')"></div>
+      <div class="slide" style="background-image: url('img/slide2.jpg')"></div>
+      <div class="slide" style="background-image: url('img/slide3.jpg')"></div>
+    </div>
+    <div class="hero-text">
+      <h1>FIANO ROMANO BASKET</h1>
+      <p>Passione, forza e grinta in campo dal 1980</p>
+      <a href="contatti.html" class="btn-primary">ISCRIVITI ORA</a>
     </div>
   </section>
 
-  <!-- SEZIONE: PROSSIME PARTITE -->
-  <section class="section section--strip">
-    <div class="container">
-      <h2>Prossime partite</h2>
-      <div class="matches-preview">
-        <article class="match">
-          <div class="teams">Fiano Romano <span>vs</span> Roma Juniors</div>
-          <div class="meta">15 Settembre 2025 — PalaSport Fiano, ore 18:00</div>
-        </article>
-        <article class="match">
-          <div class="teams">Tivoli <span>vs</span> Fiano Romano</div>
-          <div class="meta">22 Settembre 2025 — Palazzetto Tivoli, ore 19:30</div>
-        </article>
-        <article class="match">
-          <div class="teams">Fiano Romano <span>vs</span> Latina BC</div>
-          <div class="meta">29 Settembre 2025 — PalaSport Fiano, ore 18:00</div>
-        </article>
-      </div>
-      <p class="center"><a class="btn small" href="calendario.html">Vedi calendario completo</a></p>
-    </div>
-  </section>
+  <main>
+    <section class="about">
+      <h2>Benvenuti al Fiano Romano Basket</h2>
+      <p>La nostra società sportiva di basket offre un ambiente dedicato a tutti gli appassionati, dai più piccoli ai veterani, con allenamenti, competizioni e tanto spirito di squadra.</p>
+    </section>
 
-  <!-- SEZIONE: SQUADRE -->
-  <section class="section">
-    <div class="container">
+    <section class="teams">
       <h2>Le nostre squadre</h2>
-      <div class="teams-grid">
-        <div class="team-card">
-          <img src="img/team-1.jpg" alt="Under 14" />
-          <h3>Under 14</h3>
-          <p>Allenatore: Mario Rossi</p>
+      <div class="team-cards">
+        <div class="card">
+          <img src="img/team-u12.jpg" alt="Under 12" />
+          <h3>UNDER 12</h3>
+          <p>Giovani talenti in crescita</p>
         </div>
-        <div class="team-card">
-          <img src="img/team-2.jpg" alt="Under 18" />
-          <h3>Under 18</h3>
-          <p>Allenatore: Luca Bianchi</p>
+        <div class="card">
+          <img src="img/team-u16.jpg" alt="Under 16" />
+          <h3>UNDER 16</h3>
+          <p>Competitività e passione</p>
         </div>
-        <div class="team-card">
-          <img src="img/team-3.jpg" alt="Prima squadra" />
-          <h3>Prima Squadra</h3>
-          <p>Allenatore: Francesco Verdi</p>
+        <div class="card">
+          <img src="img/team-senior.jpg" alt="Senior" />
+          <h3>SENIOR</h3>
+          <p>Esperienza e dedizione</p>
         </div>
       </div>
-      <p class="center"><a class="btn" href="squadre.html">Tutte le squadre</a></p>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- SEZIONE: ULTIME NEWS -->
-  <section class="section section--light">
-    <div class="container">
-      <h2>Ultime news</h2>
-      <div class="news-grid">
-        <article class="news-card">
-          <img src="img/news-1.jpg" alt="Nuova stagione" />
-          <h3>Nuova stagione 2025</h3>
-          <p>La stagione riparte con grandi ambizioni: ecco il calendario e le novità per atleti e famiglie.</p>
-          <p><a href="news.html">Leggi di più →</a></p>
-        </article>
-        <article class="news-card">
-          <img src="img/news-2.jpg" alt="Open day" />
-          <h3>Open day per iscrizioni</h3>
-          <p>Iscrizioni aperte: vieni a provare gli allenamenti gratuiti per le categorie giovanili.</p>
-          <p><a href="news.html">Leggi di più →</a></p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section cta">
-    <div class="container cta-inner">
-      <h2>Vuoi saperne di più o provare un allenamento?</h2>
-      <a class="btn big" href="contatti.html">Contattaci</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <img src="img/logo-footer.png" alt="FIANO ROMANO BASKET" class="logo-small" />
-        <p>© <span id="year"></span> Fiano Romano Basket — Tutti i diritti riservati</p>
-      </div>
-
-      <div class="footer-right">
-        <p>Segui la squadra:</p>
-        <div class="socials">
-          <a href="#" aria-label="Facebook">FB</a>
-          <a href="#" aria-label="Instagram">IG</a>
-        </div>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">FIANO ROMANO BASKET</div>
+      <p>© <span id="year"></span> Fiano Romano Basket — Tutti i diritti riservati</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook" class="facebook">FB</a>
+        <a href="#" aria-label="Instagram" class="instagram">IG</a>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
   <script>
-    // Aggiorna anno nel footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
